@@ -79,9 +79,70 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.grey[300],
                           )
                         ),
+                        style: TextStyle(
+                          color:Colors.white,
+                          )
+                      ),
+                    ),
+                    Container(
+                      padding:EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        border: Border(
+                         bottom:BorderSide(
+                           color: Colors.grey
+                         )
+                       ),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border:InputBorder.none,
+                          hintText: "Password",
+                          hintStyle: TextStyle(
+                            color: Colors.grey[300],
+                          ),
+                        ),
+                        style: TextStyle(
+                          color:Colors.white,
+                          ),
                       ),
                     )
-                  ],),
+                  ],
+                  ),
+                ),
+                SizedBox(
+                  height:10
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Align(
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      "Forgot password?",
+                      style: TextStyle(
+                        color: Colors.white38,
+                      )
+                    )
+                  ),
+                ),
+                SizedBox(
+                  height:25
+                ),
+                Container(
+                  height:50,
+                  margin:EdgeInsets.symmetric(horizontal:60),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: Colors.pink[800]
+                  ),
+                  child: Center(
+                    child:Text(
+                      "Login",
+                      style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white70
+                      )
+                    )
+                  )
                 )
               ],
             )
